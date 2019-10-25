@@ -1,0 +1,9 @@
+server:
+  port: 8001
+  tomcat:
+    uri-encoding: UTF-8
+
+logging:
+  level:
+    root: INFO
+    mysql: INFO
