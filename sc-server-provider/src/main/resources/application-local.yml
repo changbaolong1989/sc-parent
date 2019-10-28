@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8888
   tomcat:
     uri-encoding: UTF-8
 
@@ -43,6 +43,8 @@ spring:
       # 在Druid中，不会存在Oracle下PSCache占用内存过多的问题，
       # 可以把这个数值配置大一些，比如说100
       max-pool-prepared-statement-per-connection-size: 30
+  application:
+    name: sc-server-provider
 mybatis:
   mapper-locations: classpath*:mapper/**/*.xml
   type-aliases-package: com.cbl.spring.cloud.entity
@@ -50,3 +52,6 @@ logging:
   level:
     root: INFO
     mysql: INFO
+eureka:
+  instance:
+    prefer-ip-address: true #将自己的IP注册到eureka server
