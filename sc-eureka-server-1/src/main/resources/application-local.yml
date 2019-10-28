@@ -2,10 +2,10 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: peer1
+    hostname: eureka-server-1 #eureka.instance.hostname不能重复，否则集群失败，所以不能为localhost或者ip地址
   client:
     service-url:
-      defaultZone: http://peer2:8762/eureka  #设置Eureka Server的交互地址
+      defaultZone: http://eureka-server-2:8762/eureka  #设置Eureka Server的交互地址
 spring:
   application:
     name: sc-eureka-server
