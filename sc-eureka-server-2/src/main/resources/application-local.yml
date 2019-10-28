@@ -1,0 +1,11 @@
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka   #设置Eureka Server的交互地址
+spring:
+  application:
+    name: sc-eureka-server  # 两个集群项目的spring.application.name必须相同，eureka.instance.hostname必须不同，否则都会失败。（至少我测试的是这样）
