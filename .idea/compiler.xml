@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sc-eureka-server" />
+        <module name="sc-eureka-server-1" />
         <module name="sc-parent" />
         <module name="sc-server-consumer" />
         <module name="sc-server-provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sc-eureka-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
