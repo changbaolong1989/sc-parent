@@ -55,3 +55,9 @@ logging:
 eureka:
   instance:
     prefer-ip-address: true #将自己的IP注册到eureka server
+  client:
+    service-url:
+      # 注册到eureka集群
+      # defaultZone: http://eureka-server-1:8761/eureka/,http://eureka-server-2:8762/eureka/
+      # 注册到带有用户认证的eureka
+      defaultZone: http://admin:admin@eureka-server-1:8761/eureka/,http://admin:admin@eureka-server-2:8762/eureka/
