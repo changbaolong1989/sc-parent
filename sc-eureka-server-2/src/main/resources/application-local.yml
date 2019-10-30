@@ -9,3 +9,10 @@ eureka:
 spring:
   application:
     name: sc-eureka-server  # 两个集群项目的spring.application.name必须相同，eureka.instance.hostname必须不同，否则都会失败。（至少我测试的是这样）
+security:
+  basic:
+    enabled: true #开启基于HTTP用户认证
+  user:
+    name: admin   #登录账号
+    password: admin   #登录密码
+

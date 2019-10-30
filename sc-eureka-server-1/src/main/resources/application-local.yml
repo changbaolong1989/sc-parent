@@ -9,3 +9,9 @@ eureka:
 spring:
   application:
     name: sc-eureka-server
+security:
+  basic:
+    enabled: true #开启基于HTTP用户认证
+  user:
+    name: admin   #登录账号
+    password: admin   #登录密码
