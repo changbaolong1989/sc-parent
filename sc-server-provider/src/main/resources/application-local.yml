@@ -55,6 +55,8 @@ logging:
 eureka:
   instance:
     prefer-ip-address: true #将自己的IP注册到eureka server
+    metadata-map:
+      my-metadata: 自定义元数据   #自定义元数据  访问http://localhost:8888/user-instance可以看到
   client:
     service-url:
       # 注册到eureka集群

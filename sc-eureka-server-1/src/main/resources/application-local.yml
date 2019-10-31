@@ -8,7 +8,7 @@ eureka:
       defaultZone: http://eureka-server-2:8762/eureka  #设置Eureka Server的交互地址
 spring:
   application:
-    name: sc-eureka-server
+    name: sc-eureka-server #应用名称
 security:
   basic:
     enabled: true #开启基于HTTP用户认证
