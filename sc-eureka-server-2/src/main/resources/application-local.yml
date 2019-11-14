@@ -6,6 +6,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server-1:8761/eureka   #设置Eureka Server的交互地址
+    register-with-eureka: false #是否要注册到其他Server上
+    fetch-registry: false       #是否拉取服务信息
 spring:
   application:
     name: sc-eureka-server  # 两个集群项目的spring.application.name必须相同，eureka.instance.hostname必须不同，否则都会失败。（至少我测试的是这样）

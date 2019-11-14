@@ -6,6 +6,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server-2:8762/eureka  #设置Eureka Server的交互地址
+    register-with-eureka: false #是否要注册到其他Server上
+    fetch-registry: false       #是否拉取服务信息
 spring:
   application:
     name: sc-eureka-server #应用名称
