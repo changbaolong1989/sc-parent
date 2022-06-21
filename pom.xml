@@ -28,7 +28,7 @@
         <spring.cloud.version>Edgware.RELEASE</spring.cloud.version>
         <junit.version>4.12</junit.version>
         <alibaba.druid.version>1.1.14</alibaba.druid.version>
-        <mysql.connector.version>5.1.46</mysql.connector.version>
+        <mysql.connector.version>8.0.28</mysql.connector.version>
         <mybatis.version>2.0.0</mybatis.version>
     </properties>
 
